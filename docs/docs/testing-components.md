@@ -49,6 +49,7 @@ const createComponent = createComponentFactory({
   shallow: true, // Defaults to false
 });
 ```
+When `detectChanges` is `true`, `createComponent` will automatically call `ngOnInit()`. Also, calling `setInput()` will automatically detect changes without having to call `detectChanges()` explicitly.
 
 The `createComponent()` function optionally takes the following options:
 ```ts
